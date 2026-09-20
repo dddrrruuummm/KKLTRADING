@@ -5,18 +5,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#163b35",
-        pearl: "#f7f4ec",
-        blush: "#e7d4ad",
-        wine: "#d6573b",
-        brass: "#d7983c",
-        mist: "#e2e9dc"
+        ink: "#181714",
+        pearl: "#fbf8f1",
+        blush: "#f1dbc7",
+        wine: "#d9472c",
+        brass: "#5d725c",
+        mist: "#e7e1d4"
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Inter", "Arial", "sans-serif"]
       },
       boxShadow: {
-        soft: "0 20px 60px rgba(22, 59, 53, 0.16)"
+        soft: "0 20px 60px rgba(24, 23, 20, 0.12)"
       }
     }
   },

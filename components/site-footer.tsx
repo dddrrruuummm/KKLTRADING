@@ -7,9 +7,10 @@ export function SiteFooter() {
     <footer className="border-t border-ink/10 bg-ink text-white">
       <div className="container-page grid gap-10 py-12 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <p className="font-serif text-2xl font-bold">{site.name}</p>
+          <p className="text-xs font-bold uppercase text-blush">Trade Fieldbook / 2026</p>
+          <p className="mt-3 font-serif text-3xl font-bold">{site.name}</p>
           <p className="mt-4 max-w-md text-sm leading-6 text-white/70">
-            An Ontario trade company for sourcing conversations, commercial coordination, and international partnership.
+            A working trade desk for sourcing conversations, commercial coordination, and international partnership.
           </p>
         </div>
         <div>
@@ -27,7 +28,7 @@ export function SiteFooter() {
         <div>
           <p className="text-sm font-bold uppercase tracking-widest text-white/60">Contact</p>
           <div className="mt-4 grid gap-3 text-sm text-white/75">
-            <a className="flex gap-2 hover:text-white" href={`tel:${site.phone}`}><Phone size={16} />{site.phone}</a>
+            <a className="flex gap-2 hover:text-white" href={`tel:${site.phone.replace(/[^+\d]/g, "")}`}><Phone size={16} />{site.phone}</a>
             <a className="flex gap-2 hover:text-white" href={`mailto:${site.email}`}><Mail size={16} />{site.email}</a>
             <p className="flex gap-2"><MapPin size={16} />Based in {site.address.city}, {site.address.state}</p>
           </div>

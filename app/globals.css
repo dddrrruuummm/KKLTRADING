@@ -12,17 +12,18 @@ html {
 }
 
 body {
-  background: #f5f6ef;
-  color: #102c28;
+  background: #fbf8f1;
+  color: #181714;
 }
 
 * {
   box-sizing: border-box;
+  letter-spacing: 0 !important;
 }
 
 ::selection {
-  background: #c7e36b;
-  color: #102c28;
+  background: #d9472c;
+  color: #fff;
 }
 
 .container-page {
@@ -31,7 +32,7 @@ body {
 }
 
 .eyebrow {
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   text-transform: uppercase;
   font-size: 0.76rem;
   font-weight: 700;
@@ -42,5 +43,29 @@ body {
 }
 
 .focus-ring:focus-visible {
-  box-shadow: 0 0 0 3px rgba(214, 87, 59, 0.28);
+  box-shadow: 0 0 0 3px rgba(217, 71, 44, 0.28);
+}
+
+.fieldbook-grid {
+  background-image: linear-gradient(rgba(24, 23, 20, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(24, 23, 20, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.route-dash {
+  stroke-dasharray: 7 7;
+  animation: route-dash 20s linear infinite;
+}
+
+@keyframes route-dash {
+  to { stroke-dashoffset: -280; }
+}
+
+.trade-image {
+  filter: saturate(0.78) contrast(1.03);
+}
+
+.trade-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
 }
